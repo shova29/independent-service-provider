@@ -6,11 +6,13 @@ function CustomLink({ children, to, ...props }) {
   let match = useMatch({ path: resolved.pathname, end: true });
 
   return (
-    <div className="">
+    <div>
       <Link
-        // className="mr-8 lg:text-xl sm:text-sm  font-bold"
+        // className="me-8 lg:text-xl sm:text-sm  font-bold"
+        className="me-8 fs-4 fw-bolder"
         style={{
-          color: match ? "green" : "black",
+          color: match ? "lightseagreen" : "black",
+          //   fontSize: match ? "bolder" : "",
           textDecoration: match ? "underline" : "none",
         }}
         to={to}

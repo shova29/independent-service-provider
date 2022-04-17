@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "name": "ENVIRONMENTAL",
+    "image": "https://i.ibb.co/NWjg3c8/Greater-Yellowlegs-Elegant-Pose.jpg",
+    "description": "That sunset/sunrise on a safari",
+    "price": "$33",
+    "review": "",
+    "rating": "5.0"
+  },
+  {
+    "id": "2",
+    "name": "NATURE",
+    "image": "https://i.ibb.co/5By66Sq/Yellow-Warbler.jpg",
+
+    "description": "That sunset/sunrise on a safari",
+    "price": "$28",
+    "review": "Love it! I have been looking for these for months.",
+    "rating": "4.5"
+  },
+  {
+    "id": "3",
+    "name": "PORTRAITS",
+    "image": "https://i.ibb.co/5L9YsD6/2021-Atlantic-Puffin-July-4-Print.jpg",
+    "description": "That sunset/sunrise on a safari",
+    "price": "$26",
+    "review": "It's beautiful ! Highly recommend it! defiantly will shop for a new shade again !",
+    "rating": "5.0"
+  },
+  {
+    "id": "4",
+    "name": "MOTION",
+    "image": "https://i.ibb.co/4FKxzfd/2016-Norther-Gannet-July-3a.jpg",
+    "description": "That sunset/sunrise on a safari",
+    "price": "$40",
+    "review": "Its colors are excellent and it is worth trusting",
+    "rating": "4.5"
+  },
+  {
+    "id": "5",
+    "name": "SHADOWS & LIGHT",
+    "image": "https://i.ibb.co/fXSHp5L/2021-Purple-Sandpiper-March-1-WS.jpg",
+    "description": "That sunset/sunrise on a safari",
+    "price": "$37",
+    "review": "loved them! and amazing seller and great customer support !",
+    "rating": "4.0"
+  },
+  {
+    "id": "6",
+    "name": "FIRE & ICE",
+    "image": "https://i.ibb.co/dBY48zD/2020-Wilson-Snipe-May-1.jpg",
+    "description": "That sunset/sunrise on a safari",
+    "price": "$38",
+    "review": "Love the look!! Good quality. Looks great on.",
+    "rating": "4.0"
+  }
+]
