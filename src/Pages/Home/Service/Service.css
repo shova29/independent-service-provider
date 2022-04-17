@@ -1,8 +1,15 @@
 .btn-green {
   /* background-color: #aee0bb; */
   background-color: rgb(32, 178, 134);
+  border-radius: 18px;
+  /*   padding: 10px;
+  margin: 10px; */
 }
 
 .btn-green:hover {
   background-color: rgb(27, 141, 97);
+}
+
+.service-image img {
+  border-radius: 10px;
 }
