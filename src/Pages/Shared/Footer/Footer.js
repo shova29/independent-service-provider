@@ -33,10 +33,10 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-sm-3 col-md-3 item">
-              <h3>About</h3>
+              <h3>Company</h3>
               <ul>
                 <li>
-                  <a href="#">Company</a>
+                  <a href="#">About</a>
                 </li>
                 <li>
                   <a href="#">Blog</a>
@@ -105,7 +105,10 @@ const Footer = () => {
             <p>
               {" "}
               &copy;Copyright {year} &#64; All Rights Reserved by{" "}
-              <a href=""> WildQuestLens</a>
+              <a href="https://github.com/programming-hero-web-course-4/independent-service-provider-shova29">
+                {" "}
+                WildQuestLens
+              </a>
             </p>
           </div>
         </div>
