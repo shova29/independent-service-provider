@@ -9,7 +9,7 @@ const Footer = () => {
       <footer>
         <div className="container">
           <div className="row">
-            <div className="col-sm-6 col-md-3 item">
+            <div className="col-sm-3 col-md-3 item">
               <h3>Services</h3>
               <ul>
                 <li>
@@ -32,7 +32,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-sm-6 col-md-3 item">
+            <div className="col-sm-3 col-md-3 item">
               <h3>About</h3>
               <ul>
                 <li>
@@ -52,7 +52,32 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-md-6 item text">
+            <div className="col-sm-3 col-md-3 item">
+              <h3>Contact & Support</h3>
+              <ul>
+                <li>
+                  <span>
+                    <i className="fas fa-phone"></i>+88 00 00 00 00
+                  </span>
+                </li>
+                <li>
+                  <a href="#">
+                    <i className="fas fa-comments"></i>Live chat
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i className="fas fa-envelope"></i>Contact us
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i className="fas fa-star"></i>Give feedback
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="col-md-3 item text">
               <h3>WildQuestLens</h3>
               <p>
                 I picked up a camera one day and never put it down. I love to
