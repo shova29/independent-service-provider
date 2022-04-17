@@ -33,7 +33,7 @@ const Header = () => {
               Home
             </Nav.Link>
             <Nav.Link as={CustomLink} to="/blogs">
-              Blogs
+              Blog
             </Nav.Link>
             <Nav.Link as={CustomLink} to="/about">
               About

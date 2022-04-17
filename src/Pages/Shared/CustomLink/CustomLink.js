@@ -13,7 +13,7 @@ function CustomLink({ children, to, ...props }) {
         style={{
           color: match ? "lightseagreen" : "black",
           //   fontSize: match ? "bolder" : "",
-          textDecoration: match ? "underline" : "none",
+          // textDecoration: match ? "underline" : "none",
         }}
         to={to}
         {...props}

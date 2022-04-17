@@ -26,7 +26,7 @@ const Service = ({ service }) => {
             {" "}
             <a
               href="#"
-              className="btn btn-green bg-gradient bg-opacity-25 fw-bold text-white me-3 ms-2"
+              className="btn btn-green w-75 bg-gradient bg-opacity-25 fw-bold text-white me-3 ms-2"
             >
               BOOK NOW
             </a>

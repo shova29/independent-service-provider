@@ -1,5 +1,5 @@
 import React from "react";
-import "./Service.css";
+import "./Services.css";
 import useServices from "../../../hooks/useServices";
 import Service from "../Service/Service";
 

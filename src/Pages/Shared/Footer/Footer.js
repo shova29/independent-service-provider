@@ -104,11 +104,11 @@ const Footer = () => {
             {" "}
             <p>
               {" "}
-              &copy;Copyright {year} &#64; All Rights Reserved by{" "}
-              <a href="https://github.com/programming-hero-web-course-4/independent-service-provider-shova29">
-                {" "}
-                WildQuestLens
-              </a>
+              &copy;Copyright {year} &#64; WildQuestLens Photography. All Rights
+              Reserved{" "}
+            </p>
+            <p>
+              <a href="https://github.com/shova29"> Design by Shova29</a>
             </p>
           </div>
         </div>
