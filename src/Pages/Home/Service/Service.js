@@ -2,9 +2,14 @@ import React from "react";
 import "./Service.css";
 // import { Card } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
+import { Link, useNavigate } from "react-router-dom";
 
 const Service = ({ service }) => {
   const { id, name, image, price, description } = service;
+  const navigate = useNavigate();
+  const navigateToServiceDetail = (id) => {
+    navigate(`/service/${id}`);
+  };
   return (
     <div className="g-5 col-sm-12 col-md-6 col-lg-4">
       {" "}
@@ -24,12 +29,13 @@ const Service = ({ service }) => {
           </p>
           <div className="text-center">
             {" "}
-            <a
-              href="#"
+            <Link
+              onClick={() => navigateToServiceDetail(id)}
+              to="/checkout"
               className="btn btn-green w-75 bg-gradient bg-opacity-25 fw-bold text-white me-3 ms-2"
             >
               BOOK NOW
-            </a>
+            </Link>
           </div>
         </div>
       </div>

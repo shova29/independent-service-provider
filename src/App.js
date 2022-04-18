@@ -8,6 +8,8 @@ import Header from "./Pages/Shared/Header/Header";
 import NotFound from "./Pages/Shared/NotFound/NotFound";
 import SignIn from "./Pages/SignIn/SignIn";
 import SignUp from "./Pages/SignIn/SignUp/SignUp";
+import Checkout from "./Pages/Checkout/Checkout";
+import RequireAuth from "./Pages/SignIn/RequireAuth/RequireAuth";
 
 function App() {
   return (
@@ -20,6 +22,14 @@ function App() {
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/signin" element={<SignIn></SignIn>}></Route>
         <Route path="/signup" element={<SignUp></SignUp>}></Route>
+        <Route
+          path="/checkout"
+          element={
+            <RequireAuth>
+              <Checkout></Checkout>
+            </RequireAuth>
+          }
+        ></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

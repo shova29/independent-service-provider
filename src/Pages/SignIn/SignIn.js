@@ -10,12 +10,15 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import Loading from "../Shared/Loading/Loading";
 import SocialSignIn from "./SocialSignIn/SocialSignIn";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const SignIn = () => {
   const emailRef = useRef("");
   const passwordRef = useRef("");
   const navigate = useNavigate();
   const location = useLocation();
+  const customId = "custom-id-yes";
   let from = location.state?.from?.pathname || "/";
   let errorElement;
 
@@ -49,18 +52,22 @@ const SignIn = () => {
     const email = emailRef.current.value;
     if (email) {
       await sendPasswordResetEmail(email);
-      alert("Sent Password Reset Link to Your Email.");
+      toast("Sent Password Reset Link to Your Email.", {
+        toastId: customId,
+      });
     } else {
-      alert("Please Enter Your Email Address");
+      toast.error("Please Enter Your Email Address", {
+        toastId: customId,
+      });
     }
   };
 
   return (
-    <div className="container w-50 mx-auto">
+    <div className="container w-50 mx-auto shadow">
       <h2 className="text-center mt-2 mb-3" style={{ color: "lightseagreen" }}>
         Please Sign-in
       </h2>
-      <Form onSubmit={handleSubmit} className="shadow">
+      <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3 px-5 pt-5" controlId="formBasicEmail">
           <Form.Control
             style={{ borderRadius: "18px", boxShadow: "8px 8px 6px" }}
@@ -81,35 +88,35 @@ const SignIn = () => {
           />
         </Form.Group>
         <Button
-          variant="mx-auto w-25 d-block mt-5 mb-2"
           type="submit"
           style={{ backgroundColor: "rgb(27, 141, 97)", borderRadius: "18px" }}
-          className="btn-lg shadow text-white mt-3 w-25 d-grid ms-5 py-1 text-center align-items-center mb-3 border-0"
+          className="btn-lg shadow text-white mt-5 w-25 d-grid ms-5 py-1 text-center align-items-center mb-3 border-0"
         >
           Sign in
         </Button>
-        {errorElement}
-        <p className="ms-5 mt-4">
-          New to WildQuestLens?{" "}
-          <Link
-            to="/signup"
-            className="fw-bold text-primary pe-auto text-decoration-none"
-            onClick={navigateSignUp}
-          >
-            Please SignUp
-          </Link>
-        </p>
-        <p className="ms-5 mt-2">
-          Forget Password?{" "}
-          <button
-            className="fw-bold btn btn-link text-primary pe-auto text-decoration-none"
-            onClick={resetPassword}
-          >
-            Reset Password
-          </button>
-        </p>
-        <SocialSignIn></SocialSignIn>
       </Form>
+      {errorElement}
+      <p className="ms-5 mt-4">
+        New to WildQuestLens?{" "}
+        <Link
+          to="/signup"
+          className="fw-bold text-primary pe-auto text-decoration-none"
+          onClick={navigateSignUp}
+        >
+          Please SignUp
+        </Link>
+      </p>
+      <p className="ms-5 mt-2">
+        Forget Password?{" "}
+        <button
+          className="fw-bold btn btn-link text-primary pe-auto text-decoration-none"
+          onClick={resetPassword}
+        >
+          Reset Password
+        </button>
+      </p>
+      <SocialSignIn></SocialSignIn>
+      <ToastContainer />
     </div>
   );
 };

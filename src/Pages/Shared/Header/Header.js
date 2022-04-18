@@ -49,11 +49,11 @@ const Header = () => {
               Contact
             </Nav.Link>
           </Nav>
-          <Nav className="fw-bold">
+          <Nav className="ms-5 fw-bold">
             {user ? (
               <button
                 onClick={handleSignOut}
-                className="btn btn-link text-black fw-bold text-decoration-none"
+                className="btn btn-link text-black fw-bold text-decoration-none ms-5"
               >
                 SignOut
               </button>
