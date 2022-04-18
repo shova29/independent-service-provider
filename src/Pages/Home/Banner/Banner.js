@@ -22,27 +22,13 @@ const Banner = () => {
         <img
           className="d-block w-100 opacity-75"
           style={{ height: "600px" }}
-          src={banner1}
-          alt="Banner1"
-        />
-        <Carousel.Caption>
-          <h1 className="fs-1 fw-bold">Wild Quest Lens</h1>
-          <p className="fs-4 fw-light">
-            Nulla vitae elit libero, a pharetra augue mollis interdum.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100 opacity-75"
-          style={{ height: "600px" }}
           src={banner2}
-          alt="Banner1"
+          alt="Banner2"
         />
         <Carousel.Caption>
           <h1 className="fs-1 fw-bold">The Lens of Light</h1>
           <p className="fs-4 fw-light">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            I picked up a camera one day and never put it down.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -51,12 +37,26 @@ const Banner = () => {
           className="d-block w-100 opacity-75"
           style={{ height: "600px" }}
           src={banner3}
-          alt="Banner1"
+          alt="Banner3"
         />
         <Carousel.Caption>
           <h1 className="fs-1 fw-bold">Third slide label</h1>
           <p className="fs-4 fw-light">
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            I love to save moments in photography.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 opacity-75"
+          style={{ height: "600px" }}
+          src={banner1}
+          alt="Banner1"
+        />
+        <Carousel.Caption>
+          <h1 className="fs-1 fw-bold">Wild Quest Lens</h1>
+          <p className="fs-4 fw-light">
+            Keep them around for generations to come.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
