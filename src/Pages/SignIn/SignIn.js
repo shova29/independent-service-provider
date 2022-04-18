@@ -65,7 +65,7 @@ const SignIn = () => {
   return (
     <div className="container w-50 mx-auto shadow">
       <h2 className="text-center mt-2 mb-3" style={{ color: "lightseagreen" }}>
-        Please Sign-in
+        Please Signin
       </h2>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3 px-5 pt-5" controlId="formBasicEmail">
@@ -92,7 +92,7 @@ const SignIn = () => {
           style={{ backgroundColor: "rgb(27, 141, 97)", borderRadius: "18px" }}
           className="btn-lg shadow text-white mt-5 w-25 d-grid ms-5 py-1 text-center align-items-center mb-3 border-0"
         >
-          Sign in
+          Signin
         </Button>
       </Form>
       {errorElement}
