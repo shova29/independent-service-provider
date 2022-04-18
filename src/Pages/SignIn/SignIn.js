@@ -90,7 +90,7 @@ const SignIn = () => {
         </Button>
         {errorElement}
         <p className="ms-5 mt-4">
-          New to Genius Car?{" "}
+          New to WildQuestLens?{" "}
           <Link
             to="/signup"
             className="fw-bold text-primary pe-auto text-decoration-none"
