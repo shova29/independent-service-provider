@@ -8,25 +8,19 @@ const Services = () => {
   return (
     <div id="services" className="container">
       <h2
-        className="services-title text-center fw-bold mt-5"
+        className="services-title text-center fs-1 fw-bold mt-5"
         style={{ color: "rgb(27, 141, 97)" }}
       >
         W
-        <span className="" style={{ color: "lightseagreen" }}>
+        <span className="fs-2" style={{ color: "lightseagreen" }}>
           ild
         </span>
         Q
-        {/*  <span className="" style={{ color: "rgb(27, 141, 97)" }}>
-          Q
-        </span> */}
-        <span className="" style={{ color: "lightseagreen" }}>
+        <span className="fs-2" style={{ color: "lightseagreen" }}>
           uest
         </span>
         L
-        {/*     <span className="" style={{ color: "rgb(27, 141, 97)" }}>
-          L
-        </span> */}
-        <span className="" style={{ color: "lightseagreen" }}>
+        <span className="fs-2" style={{ color: "lightseagreen" }}>
           ens{" "}
         </span>
         <span className="" style={{ color: "lightseagreen" }}>
