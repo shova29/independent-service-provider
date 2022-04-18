@@ -6,13 +6,13 @@ const AwardSection = () => {
     <div className="container">
       <h2
         className="text-center fs-1 fw-bold mt-5"
-        style={{ color: "lightseagreen" }}
+        style={{ color: "rgb(27, 141, 97)" }}
       >
         AWARDS{" "}
       </h2>
-      <h3 className="text-center mt-3">
+      <h3 className="text-center mt-3 fs-4">
         A few photography{" "}
-        <span className="fs-2" style={{ color: "rgb(27, 141, 97)" }}>
+        <span className="fs-2" style={{ color: "lightseagreen" }}>
           Awards
         </span>{" "}
         to be excited about
@@ -34,7 +34,7 @@ const AwardSection = () => {
           </p>
         </div>
         <div className="col-lg-4">
-          <Card className=" border-5">
+          <Card className="shadow border-0">
             <Card.Img className="px-3 py-3" variant="top" src={award} />
           </Card>
           <br />

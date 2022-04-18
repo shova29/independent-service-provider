@@ -23,9 +23,7 @@ const Services = () => {
         <span className="fs-2" style={{ color: "lightseagreen" }}>
           ens{" "}
         </span>
-        <span className="" style={{ color: "lightseagreen" }}>
-          Services{" "}
-        </span>
+        <span className="">Services </span>
       </h2>
       <div className="services-title-underline "></div>
       <div className="row services-container mt-3">

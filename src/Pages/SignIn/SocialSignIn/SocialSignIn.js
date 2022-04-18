@@ -6,6 +6,8 @@ import {
 import auth from "../../../firebase.init";
 import { useNavigate } from "react-router-dom";
 import Loading from "../../Shared/Loading/Loading";
+import { FaGoogle } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 const SocialSignIn = () => {
   const [signInWithGoogle, googleUser, loadingForGoogle, googleError] =
@@ -49,16 +51,16 @@ const SocialSignIn = () => {
           className="btn btn-white w-50 mx-auto me-3 mb-5 fw-bold shadow"
           style={{ border: "", borderRadius: "18px" }}
         >
-          <img src={""} alt="" />
-          <span className="px-2">Sign in with Google</span>
+          <FaGoogle className="icon f-3" />
+          <span className="px-2 ms-5">Sign in with Google</span>
         </button>
         <button
           onClick={() => signInWithGithub()}
-          className="btn btn-dark w-50 mx-auto me-3 mb-5 fw-bold shadow"
+          className="btn btn-dark w-50 mx-auto me-3 mb-5 fw-bold shadow "
           style={{ borderRadius: "18px" }}
         >
-          <img src={"githubLogo"} alt="" />
-          <span className="px-2">Sign in with Github</span>
+          <FaGithub className="icon f-3" />
+          <span className="px-2 ms-5">Sign in with Github</span>
         </button>
       </div>
     </div>

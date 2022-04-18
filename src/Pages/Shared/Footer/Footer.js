@@ -1,6 +1,9 @@
 import React from "react";
 import "./Footer.css";
-
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 const Footer = () => {
   const today = new Date();
   const year = today.getFullYear();
@@ -87,16 +90,16 @@ const Footer = () => {
             </div>
             <div className="col item social">
               <a href="#">
-                <i className="icon ion-social-facebook"></i>
+                <FaFacebook className="icon " />
               </a>
               <a href="#">
-                <i className="icon ion-social-twitter"></i>
+                <FaTwitter className="icon " />
               </a>
               <a href="#">
-                <i className="icon ion-social-snapchat"></i>
+                <FaGithub className="icon" />
               </a>
               <a href="#">
-                <i className="icon ion-social-instagram"></i>
+                <FaInstagram className="icon " />
               </a>
             </div>
           </div>
