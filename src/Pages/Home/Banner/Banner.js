@@ -40,7 +40,7 @@ const Banner = () => {
           alt="Banner3"
         />
         <Carousel.Caption>
-          <h1 className="fs-1 fw-bold">Third slide label</h1>
+          <h1 className="fs-1 fw-bold">Thrilling Nature</h1>
           <p className="fs-4 fw-light">
             I love to save moments in photography.
           </p>

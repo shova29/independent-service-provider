@@ -25,13 +25,13 @@ const Footer = () => {
                   <a href="#">Nature</a>
                 </li>
                 <li>
-                  <a href="#">MOTION</a>
+                  <a href="#">Motion</a>
                 </li>
                 <li>
-                  <a href="#">SHADOWS & LIGHT</a>
+                  <a href="#">Shadows & Light</a>
                 </li>
                 <li>
-                  <a href="#">FIRE & ICE</a>
+                  <a href="#">Fire & Ice</a>
                 </li>
               </ul>
             </div>
