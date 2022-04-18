@@ -19,6 +19,7 @@ function App() {
         {/* <Router path='/blog' element={}></Router> */}
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/signin" element={<SignIn></SignIn>}></Route>
+        <Route path="/signup" element={<SignUp></SignUp>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
