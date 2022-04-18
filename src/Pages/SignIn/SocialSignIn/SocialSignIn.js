@@ -8,23 +8,25 @@ import { useNavigate } from "react-router-dom";
 import Loading from "../../Shared/Loading/Loading";
 
 const SocialSignIn = () => {
-  const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
-  const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
+  const [signInWithGoogle, googleUser, loadingForGoogle, googleError] =
+    useSignInWithGoogle(auth);
+  const [signInWithGithub, githubUser, loadingForGithub, githubError] =
+    useSignInWithGithub(auth);
   const navigate = useNavigate();
   let errorElement;
-  if (error || error1) {
+  if (googleError || githubError) {
     errorElement = (
-      <p className="text-danger">
-        Error: {error?.message} {error1?.message}
+      <p className="text-danger ms-5 mt-3 fw-bold">
+        Error: {googleError?.message} {githubError?.message}
       </p>
     );
   }
 
-  if (loading || loading1) {
+  if (loadingForGoogle || loadingForGithub) {
     return <Loading></Loading>;
   }
 
-  if (user || user1) {
+  if (googleUser || githubUser) {
     navigate("/home");
   }
   return (

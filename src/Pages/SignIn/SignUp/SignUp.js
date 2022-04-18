@@ -11,6 +11,7 @@ import SocialSignIn from "../SocialSignIn/SocialSignIn";
 
 const SignUp = () => {
   const [agree, setAgree] = useState(false);
+
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
@@ -40,7 +41,7 @@ const SignUp = () => {
     navigate("/home");
   };
   return (
-    <div className="signup-form container w-50 mx-auto">
+    <div className="signup-form container w-50 mx-auto shadow">
       <h2
         className="mb-3"
         style={{
@@ -51,11 +52,12 @@ const SignUp = () => {
       >
         Please Sign-Up
       </h2>
-      <Form onSubmit={handleSignUp} className="shadow">
+      <Form onSubmit={handleSignUp}>
         <Form.Group className="mb-3 px-5 pt-5" controlId="formBasicName">
           <Form.Control
             style={{ borderRadius: "18px", boxShadow: "8px 8px 6px" }}
             type="text"
+            name="name"
             placeholder="Your Name"
           />
         </Form.Group>
@@ -107,18 +109,18 @@ const SignUp = () => {
         >
           Sign up
         </Button>
-        <p className="ms-5">
-          Already have an account?{" "}
-          <Link
-            to="/signin"
-            className="text-primary pe-auto fw-bold text-decoration-none"
-            onClick={navigateSignin}
-          >
-            Please Signin
-          </Link>
-        </p>
-        <SocialSignIn></SocialSignIn>
       </Form>
+      <p className="ms-5">
+        Already have an account?{" "}
+        <Link
+          to="/signin"
+          className="text-primary pe-auto fw-bold text-decoration-none"
+          onClick={navigateSignin}
+        >
+          Please Signin
+        </Link>
+      </p>
+      <SocialSignIn></SocialSignIn>
     </div>
   );
 };
