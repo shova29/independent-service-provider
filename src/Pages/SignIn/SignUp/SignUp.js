@@ -43,10 +43,10 @@ const SignUp = () => {
   return (
     <div className="signup-form container w-50 mx-auto shadow">
       <h2
-        className="mb-3"
+        className="mb-3 mt-5"
         style={{
           textAlign: "center",
-          marginTop: "15px",
+          marginTop: "20px",
           color: "lightseagreen",
         }}
       >
