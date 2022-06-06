@@ -97,7 +97,7 @@ const SignUp = () => {
             }
             htmlFor="terms"
           >
-            Accept Genius Car Terms & Conditions
+            Accept WildQuestLens Terms & Conditions
           </label>
         </Form.Group>
 

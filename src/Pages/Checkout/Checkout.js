@@ -16,7 +16,7 @@ const Checkout = () => {
           color: "lightseagreen",
         }}
       >
-        Please Sign-Up
+        Check Out
       </h2>
       <Form >
         <Form.Group className="mb-3 px-5 pt-5" controlId="formBasicName">
